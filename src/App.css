@@ -1,13 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
 
+html, body {
+    margin: 0;
+    padding: 0;
+  } 
+
 .body {
     box-sizing: border-box;
     display: flex;
-    min-height: 100vh;
     flex-direction: column;
     margin: 0;
-    font-family: Monteserrat, sans-serif;
-    padding-top: 20px;
+    font-family: Montserrat, sans-serif;
+    min-height: 100vh;
+    border: 10px solid white;
+    background-color: white;
 }
 
 
@@ -19,26 +25,30 @@
 #main > .cards {
     flex: 1;
     background: rgb(106, 64, 117);
+    max-width: calc(80% - 20px); /* set a maximum width */
+    padding: 1.5em; /* reduce padding */
 }
 
 #main > .input {
-    flex: 0 0 40vw;
+    flex: 0 0 20%;
     background: #d0c1a6;
     order: 2;
+    max-width: 20%; /* set a maximum width */
+    padding: 1.5em; /* reduce padding */
 }
 
 .header{
     background: #ffffff;
-    height: 5vh;
+    height: 4vh;
     text-align: center;
 }
 
 .cards, .input{
-    padding: 1em;
+    padding: 3em;
 }
 
 .header {
-    padding: 0.5em;
+    padding: 0.1em;
 }
 
 #main .cards .card-grid {
@@ -48,6 +58,6 @@
 }
 
 img {
-    width: 150px;
-    height: 200px;
+    width: 140px;
+    height: 190px;
 }
